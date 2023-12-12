@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact Management System</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: sans-serif;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Management System</h1>
+    <form class="contact-form">
+<label for="name">Name:</label>
+<input type="text" id="name" required>
+<label for="email">Email:</label>
+ <input type="email" id="email" required>
+<label for="phone">Phone Number:</label>
+ <input type="tel" id="phone" required>
+        <button type="submit">Add Contact</button>
+    </form>
+    <ul id="contact-list"></ul>
+ <script src="github.js"></script>
+</body>
+</html>
+
